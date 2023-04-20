@@ -8,18 +8,14 @@ server.set("views", "./views")
 
 //routes 
 
-function Routemaker(x,y){
-server.get(x, (request, response) =>{
-    response.render(y)
+function Routemaker(url, ejs){
+server.get(url, (request, response) =>{
+    response.render(ejs)
 })
 }
 
-server.get('/afbeelding', (request, response) =>{
-    response.render('afbeelding')
-})
-
 Routemaker('/', 'index')
-// Routemaker('/afbeelding', 'afbeelding')
+Routemaker('/afbeelding', 'afbeelding')
 Routemaker('/animatie', 'animatie')
 Routemaker('/berichtgeving', 'berichtgeving')
 Routemaker('/blokken', 'blokken')
