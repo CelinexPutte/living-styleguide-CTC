@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Rajhandi";
+    src: url("assets/fonts/Rajdhani-SemiBold.ttf") format("ttf"),
+        url("assets/fonts/Rajdhani-SemiBold.woff") format("woff");
+        font-weight: 600;
+}
+
+@font-face {
+    font-family: "Rajhandi";
+    src: url("assets/fonts/Rajdhani-Bold.ttf") format("ttf"),
+        url("assets/fonts/Rajdhani-Bold.woff") format("woff");
+        font-weight: 700;
+}
+
+@font-face {
+    font-family: "Rajhandi";
+    src: url("assets/fonts/Rajdhani-Regular.ttf") format("ttf"),
+        url("assets/fonts/Rajdhani-Regular.woff") format("woff");
+        font-weight: 400;
+}
+
+:root {
+    --purple-color: #524dd0;
+    --blue-color: #110f2a;
+    --green-color: #00ffec;
+    --gradient-color: linear-gradient(90deg, #524dd0 0%, #84389e 100%);
+    --black-color: #000;
+    --white-color: #fff;
+    --bg-grey: #f6f6fc;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rajhandi, sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: var(--black-color);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--purple-color); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--purple-color); 
+}
+
+/* Grid */
+body {
+    display: grid;
+    grid-template-columns: 22rem auto;
+    grid-template-rows: 5rem auto 3rem;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 3 ;
+}
+
+nav {
+    grid-area: 2 / 1 / 3 / 2 ;
+}
+
+main {
+    grid-area: 2 / 2 / 3 / 3 ;
+}
+
+footer {
+    grid-area: 3 / 1 / 4 / 3 ;
+}
+
+/* Basics */
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+}
+
+/* Header */
+body > header {
+    background-color: var(--purple-color);
+    padding: 1rem 2rem;
+}
+
+header > img {
+    height: 100%;
+    width: auto;
+}
+
+/* Nav */
+nav {
+    background-color: var(--bg-grey);
+}
+
+ul {
+    list-style: none;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+li > a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+li > a:hover {
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    color: var(--white-color);
+}
+
+/* Pages */
