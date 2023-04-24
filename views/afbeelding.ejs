@@ -88,7 +88,7 @@
                             <h3>Code 1</h3>
                         </header>
                         <div>
-                            <pre><code>&lt;img src="foto.jpg" alt="Dit is een foto"&gt;</code></pre>
+                            <pre><code>&lt;img src="foto.jpg" alt="Dit is een foto" loading="lazy"&gt;</code></pre>
                         </div>
                     </article>
                     <article>
@@ -96,7 +96,7 @@
                             <h3>Code 2</h3>
                         </header>
                         <div>
-                            <pre><code>&lt;figure&gt;</code><br><code>&#09;&lt;img src="foto.jpg" alt="Dit is een foto"&gt;</code><br><code>&lt;/figure&gt;</code></pre>
+                            <pre><code>&lt;figure&gt;</code><br><code>&#09;&lt;img src="foto.jpg" alt="Dit is een foto" loading="lazy"&gt;</code><br><code>&lt;/figure&gt;</code></pre>
                         </div>
                     </article>
                     <article>
@@ -104,7 +104,7 @@
                             <h3>Code 3</h3>
                         </header>
                         <div>
-                            <pre><code>&lt;figure&gt;</code><br><code>&#09;&lt;img src="foto.jpg" alt="Dit is een foto"&gt;</code><br><code>&#09;&lt;figcaption&gt;Dit is hoe je een afbeelding toevoegd&lt;/figcaption&gt;</code><br><code>&lt;/figure&gt;</code></pre>
+                            <pre><code>&lt;figure&gt;</code><br><code>&#09;&lt;img src="foto.jpg" alt="Dit is een foto" loading="lazy"&gt;</code><br><code>&#09;&lt;figcaption&gt;Dit is hoe je een afbeelding toevoegd&lt;/figcaption&gt;</code><br><code>&lt;/figure&gt;</code></pre>
                         </div>
                     </article>
                 </div>
@@ -134,8 +134,11 @@
                         <p>Afbeeldingen kunnen worden gebruikt om zaken te verduidelijken of als opvulling.<br>
                             <br>
                             Zorg ervoor dat afbeeldingen altijd een alternatieve tekst bevatten. Dit mag ook een 'lege'
-                            tekst zijn als de afbeelding geen toegevoegde waarde heeft.
+                            tekst zijn als de afbeelding geen toegevoegde waarde heeft. Gebruik loading="lazy" om performance te
+                            verbeteren. Dit zorgt ervoor dat de afbeeldingen die niet in beeld staan nog niet geladen worden. Dit word op
+                            elke afbeelding gebruikt. <a href="https://web.dev/browser-level-image-lazy-loading/">Bron</a>
                         </p>
+
                     </article>
                 </div>
             </article>
